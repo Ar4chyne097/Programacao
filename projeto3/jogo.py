@@ -1,5 +1,5 @@
 class Jogo:
-    def __init__(self, id_jogo, titulo, console, genero, publisher, developer, critic_score, total_sales, na_sales, jp_sales, pal_sales, other_sales, realese_date):
+    def __init__(self, id_jogo, titulo, console, genero, publisher, developer, critic_score, total_sales, na_sales, jp_sales, pal_sales, other_sales, release_date):
         self.id = id_jogo
         self.titulo = titulo
         self.console = console
@@ -12,7 +12,7 @@ class Jogo:
         self.jp_sales = jp_sales
         self.pal_sales = pal_sales
         self.other = other_sales
-        self.realease_date = realese_date
+        self.release_date = release_date
         
     def exibir(self):
         print(f'{self.id}, {self.titulo}, {self.console}, {self.genero}, {self.publisher}, {self.developer}, {self.critic_sales}, {self.jp_sales}, {self.pal_sales}, {self.other}, {self.release_date}')

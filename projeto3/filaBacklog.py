@@ -11,7 +11,7 @@ class FilaBacklog:
         else:
             return self.dados.pop(0)
         
-    def is_Empty(self):
+    def is_empty(self):
         return len(self.dados) == 0
     
     def mostrar(self):

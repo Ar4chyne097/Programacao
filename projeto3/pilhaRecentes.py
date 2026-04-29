@@ -7,12 +7,12 @@ class PilhaRecente:
         indice = -1
         
         for i in range(len(self.dados)):
-            if self.dados[i].id = jogos.id:
+            if self.dados[i].id == jogo.id:
                 indice = i
                 break
             
         if indice != -1:
-            self.dados.pop()
+            self.dados.pop(indice)
         
         self.dados.append(jogo)
         
@@ -35,12 +35,12 @@ class PilhaRecente:
         return len(self.dados) == 0
     
     def tamanho(self):
-        return len()
+        return len(self.dados)
     
     def mostrar(self):
         if self.is_empty():
             print("Nenhum jogo recente")
             return
         print("JOGOS RECENTES")
-        for i in range(len(self.dados - 1, -1, -1)):
+        for i in range(len(self.dados)):
             self.dados[i].exibir()
